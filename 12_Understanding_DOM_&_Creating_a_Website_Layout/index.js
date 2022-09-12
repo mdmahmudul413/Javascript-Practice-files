@@ -26,11 +26,24 @@ console.log(typeof(b))//b is not an object
 // });
 
 // to see the links of the dom
-let c = document.links;
-console.log(c);
-console.log(c[0]);
-console.log(c[1]);
-console.log(c[2]);
+// let c = document.links;
+// console.log(c);
+// console.log(c[0]);
+// console.log(c[1]);
+// console.log(c[2]);
 
-let d = c[3].href;
-console.log(d);
+// let d = c[3].href;
+// console.log(d);
+
+// to see the images of the dom
+// let e = document.images;
+// console.log(e);
+// console.log(e[0]);
+// console.log(e[1]);
+
+
+// to see the images of the dom
+let f = document.scripts;
+console.log(f);
+console.log(f[0]);
+console.log(f[1]);
