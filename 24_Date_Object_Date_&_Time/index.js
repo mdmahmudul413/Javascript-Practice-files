@@ -49,5 +49,3 @@ otherDate.setHours(15);
 otherDate.setMinutes(30);
 otherDate.setSeconds(0);
 console.log(otherDate);
-
-
