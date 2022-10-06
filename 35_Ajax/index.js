@@ -126,10 +126,12 @@ function popHandler(){
     xhr.onload = function(){
         if(this.status === 200){
             let arr = JSON.parse(this.responseText);
-            console.log(arr);
+            arr = arr.data;
+            // console.log(arr);
             let list = document.getElementById('list');
             let str = '';
             for(key in arr){
+                // console.log(key);
                 str += `<li>${arr[key].employee_name}</li>`;
             }
             list.innerHTML = str;
