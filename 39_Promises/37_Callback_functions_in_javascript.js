@@ -42,6 +42,7 @@ function getStudents(){
 }
 // getStudents function take 1 sec to fetch student data
 // enrollStudent({name:'Moon', Subject: 'Python'});
+
 // because of student enrollment take long time, that's why we don't see the data of 'Moon' in the DOM. that's why we have to set another callback parameter to enrollStudent to hold the execution of getStudents() function. and will not use direct call like 'getStudents()'
  
 // getStudents();
