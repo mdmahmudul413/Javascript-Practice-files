@@ -68,7 +68,6 @@ function postData(){
     // }).then((data) =>{
     //     console.log(data);
     // });
-
     
     fetch(url, params).then(response => response.text())
     .then(data => console.log(data));
