@@ -10,6 +10,7 @@ html = "<p> This is javascript tutorial </p>" +
 console.log(html);
 
 // anothor way 
+// use comma "," inside consol.log() to print multiple things serially
 html = html.concat('Adding another line', ' ', 3);
 console.log(html);
 
