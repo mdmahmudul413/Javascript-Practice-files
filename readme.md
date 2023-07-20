@@ -44,7 +44,7 @@
     // if condition is false, it will throw error in the console
     console.assert(181 < 180, 'age > 180 is not possible');
 
-## 02 Console Logs Errors Warnings & More
+## 03 Variables let const & var
 
     => 3 types of variables in js
 
@@ -107,6 +107,85 @@
         3. snake_case
 
         4. PascalCase
+
+## 04 Data Types in JavaScript
+
+    Premitive Data types
+
+        1. String 
+
+            console.log('Hello');
+
+        2. String concatenation
+
+            let name = 'Muhammad';
+            console.log('Hello' + ' ' + name);
+
+        3. typeof function return the data type
+
+            console.log('Data type is ' + typeof(name));
+
+        4. Number 
+
+            let age = 18;
+            console.log(age);
+            console.log('Data type is ' + typeof age);
+
+        5. Boolean 
+
+            let isDriver = true;
+            console.log(isDriver);
+            console.log('Data type is ' + typeof isDriver);
+
+        6. null 
+
+            let nullVar = null;
+            console.log(nullVar);
+            console.log('Data type is ' + typeof nullVar);
+
+        7. undefined 
+
+            let undef = undefined;
+            console.log(undef);
+            console.log('Data type is ' + typeof undef);
+
+
+    Reference Data types
+
+        8. Array
+
+            let arr = [1, 2, 3, false, 'moon', [1, 11, 111], {moon: 27, mahadi: 8}];
+            console.log(arr);
+            console.log('Data type is ' + typeof arr);
+
+        9. Object Literals
+
+            let mathMarks = {
+                Rohan: 33,
+                'Harry Potter': 86,
+                sam: 67
+            };
+
+            console.log(mathMarks);
+            console.log('Data type is ' + typeof mathMarks);
+
+
+        10. Function
+
+            function findName() {
+                
+            }
+            
+            console.log(findName);
+            console.log('Data type is ' + typeof findName);
+
+        11. Date
+
+            let date = new Date();
+            console.log(date);
+            console.log('Data type is ' + typeof date);
+
+
 
 
 
