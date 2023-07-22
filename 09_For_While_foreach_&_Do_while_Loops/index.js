@@ -41,12 +41,14 @@ do {
 // 'break' statement stop the iteration
 let n = 1;
 do{
-    console.log(`The 'break' number is `+n);
+    console.log(`The 'break' number is ` + n);
     n++;
     if(n===5){
         break;
     }
 }while(n<10)
+
+// 'continue' statement will skip a single iteration
 
 let p = 1;
 do{
@@ -54,7 +56,7 @@ do{
         p++;
         continue;
     }
-    console.log(`The 'continue' number is ` +p);
+    console.log(`The 'continue' number is ` + p);
 
     p++;
 }while(p<10)
