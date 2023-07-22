@@ -34,8 +34,8 @@ console.log(html.lastIndexOf('<'));
 console.log(html.charAt(5));
 
 // endsWith(), includes()
-console.log(html.endsWith('aslfj'));
-console.log(html.endsWith('3'));
+console.log('endsWith() ', html.endsWith('aslfj'));
+console.log('endsWith() ', html.endsWith('3'));
 console.log(html.includes('jwof'));
 console.log(html.includes('3'));
 

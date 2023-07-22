@@ -187,7 +187,6 @@
 
 ## 05 JavaScript Type Conversion & Coercion
 
-
     converting to string
 
         let myVar;
@@ -241,6 +240,97 @@
         let x = 123;
         let y = '456';
         console.log('Type Coercion ', x+y);
+
+## 06 Strings Properties Methods & Template Literals
+
+    console.log('hello worlds.');
+
+    const name = 'Harry';
+    const greeting = 'Good Morning';
+
+    console.log(greeting + ' ' + name);
+
+    let html;
+
+    1. way 1
+
+        html = "<p> This is javascript tutorial </p>" +
+               "<p> This is Helpful tutorial</p>";
+
+        console.log(html);
+
+    2. anothor way 
+
+        use comma "," inside consol.log() to print multiple things serially
+        html = html.concat('Adding another line', ' ', 3);
+        console.log(html);
+
+    3. toLowerCase(), toUpperCase(), length()
+
+        console.log(html.length);
+        console.log(html.toUpperCase());
+        console.log(html.toLowerCase());
+
+    4. indexing
+
+        console.log(html[1]);
+        console.log(html.indexOf('p'));
+        console.log(html.indexOf('javascript'));
+
+    5. will return -1 because the substring is missing in the main string
+
+        console.log(html.indexOf('oewoj'));
+
+    6. lastIndexof
+
+        console.log(html.lastIndexOf('<'));
+
+    7. charAt() 
+
+        console.log(html.charAt(5));
+
+    8. endsWith(), includes()
+
+        console.log('endsWith() ', html.endsWith('aslfj'));
+        console.log('endsWith() ', html.endsWith('3'));
+        console.log(html.includes('jwof'));
+        console.log(html.includes('3'));
+
+    9. substring()
+
+        console.log(html.substring(0,2));
+
+    10. slice()
+        
+        console.log(html.slice(0,6));
+        console.log(html.slice(-6));
+
+    11. split()
+        
+        console.log(html.split(' '));
+
+    12. replace(), it replaces only first occurace
+
+        console.log(html.replace('This', 'hello'));
+
+    13. template literals
+
+        let fruit1 = 'Orange';
+        let fruit2 = 'Apple';
+        let myHtml = `
+                    Hello ${name}<br>
+                    <h1>This is Heading.</h1>
+                    ${name} loves ${fruit1} and ${fruit2}.
+
+        `;
+
+        console.log(myHtml);
+        document.body.innerHTML = myHtml;
+
+    14. to use a single cout
+        
+        let name1 = 'hello\'';
+        console.log(name1);
 
 
 
