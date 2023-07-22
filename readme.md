@@ -332,7 +332,7 @@
         let name1 = 'hello\'';
         console.log(name1);
 
-## 06 Strings Properties Methods & Template Literals
+## 07_Arrays_and_Objects
 
 console.log('This is javascript tutorial');
 const marks = [34, 23, 93, 73];
@@ -412,9 +412,122 @@ console.log(arr);
         marks: [1,2,3,4],
         'last name': 'Hello'
     }
-    
+
     console.log(myObj);
     console.log(myObj.name);
     console.log(myObj.marks);
     console.log(myObj.channel);
     console.log(myObj['last name']);
+
+## 08_If_Else_Conditionals_&_Switches
+
+    console.log('Hello world.......!!!');
+    const age = 65;
+
+    1. "==" will check only value
+
+        if(age == 19){
+            console.log('Age is 19');
+        }
+
+    2. we should add else if at every alternative condition, otherwise total if else statements will execute and whitch consume more time
+
+        else if(age == 65){
+            console.log('Age is 65');
+        }
+        else{
+            console.log('Age is not 19');
+        }
+
+    3. "===" will check value and type
+        
+        const chanels = "2";
+
+        if(chanels === 2){
+            console.log('No of Chanels is 1');
+        }
+        else if(chanels ==='2'){
+            console.log('No of Chanels is 2');
+        }
+        else{
+            console.log('No of Chanels is 3');
+        }
+
+    4. '!==' will execute if value and type both false
+        
+        const lol = '65';
+
+        if(lol !== 65){
+            console.log('Hello');
+        }
+        else{
+            console.log('Hi');
+        }
+
+    5. to check a variable is defined or not
+        
+        const variable = 34;
+
+        if(variable){
+            console.log('variable is present.');
+        }
+
+        Note: This is not proper way to check variable is present or not
+
+    6. the correct way to check variable existence
+        
+        let vari = 8;
+
+        if(typeof vari !== 'undefined'){
+            console.log('vari is defined');
+        }
+        else{
+            console.log('vari is undefined');
+        }
+
+    7. we can use boolean variable in the if else condition
+        
+        const boyos = 19;
+        const doesDrive = true;
+
+        if(doesDrive){
+            console.log('Gari chalaite parbe');
+        }
+
+    8. AND(&&) OR(||) operator
+        
+        if(boyos == 19 && doesDrive == true){
+            console.log('Gari chalaite parbe');
+
+        }
+
+        if(boyos == 12 || doesDrive == true){
+            console.log('Gari chalaite parbe na');
+
+        }
+
+        if(boyos == 12 || doesDrive == false){
+            console.log('Gari chalaite parbe na');
+
+        }
+
+    9. turnary operator
+
+        console.log(age==45 ? 'Age is 45' : 'Age is not 45');
+
+    10. switch case statement 
+
+        switch(age){
+            case 12:
+                console.log('age is 12');
+                break;
+            case 45:
+                console.log('age is 45');
+                break;
+            case 65:
+                console.log('age is 65');
+                break;
+            default:
+                console.log('This is default value');
+                break;
+        }
