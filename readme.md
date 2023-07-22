@@ -335,9 +335,13 @@
 ## 07_Arrays_and_Objects
 
 console.log('This is javascript tutorial');
+
 const marks = [34, 23, 93, 73];
+
 const fruits = ['Orange', 'Apple', 'Pineapple'];
+
 const mixed = ['str', 23, [93, 73]];
+
 const arr = new Array(23, 123, 'Orange');
 
 console.log(marks);
