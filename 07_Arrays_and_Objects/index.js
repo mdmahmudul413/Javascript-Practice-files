@@ -70,4 +70,3 @@ console.log(myObj.name);
 console.log(myObj.marks);
 console.log(myObj.channel);
 console.log(myObj['last name']);
-
