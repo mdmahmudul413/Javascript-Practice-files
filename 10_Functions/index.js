@@ -82,40 +82,40 @@ console.log(myObj.game());
 // Block level Scope and Function level Scope
 // let, const has block level scope, var has function level scope
 
-var i = 345;//function level
-console.log('First value of i: '+i);
+var i = 345; //function level
+console.log('First value of i: ' + i);
 function ui(name){
-    var i = 88;//block level
-    console.log('2nd value of i is : '+i);
+    var i = 88; //block level
+    console.log('2nd value of i is : ' + i);
     return `This is ${name} ui.`;
 }
 
 console.log(ui('Harry'), i);
 
 // Another Example....................!!!!!
-var a = 345;//function level
+var a = 345; //function level
 console.log('First value of a: '+a);
-function ui(name){
-    a = 88;//It will change the value of global variable
+function ui1(name){
+    a = 88; //It will change the value of global variable
     console.log('2nd value of a is : '+a);
     return `This is ${name} ui.`;
 }
 
-console.log(ui('Harry'), a);
+console.log(ui1('Harry'), 'The global value of a is ' + a);
 
 
 // Another Example....................!!!!!
 if(1){
-    var b = 1234;//global variable or function level scope 
-    // let b = 1234;//it will through an error because this is a local variable 
-    console.log('First value of b: '+b);
+    var b = 1234; //global variable or function level scope 
+    // let b = 1234; //it will through an error because this is a local variable 
+    console.log('First value of b: ' + b);
 }
 
-function ui(name){
-    let b = 88;//It will change the value of global variable
-    console.log('2nd value of b is : '+b);
+function ui2(name){
+    let b = 88; //It will change the value of global variable
+    console.log('2nd value of b is : ' + b);
     return `This is ${name} ui.`;
 }
 
-console.log(ui('Harry'), b);
+console.log(ui2('Harry'), b);
 
